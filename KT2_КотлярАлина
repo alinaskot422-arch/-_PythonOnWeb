@@ -1,0 +1,102 @@
+# # #№1
+# arr = list(range(1, 11))
+# print(arr)
+# arr.reverse()  
+# print("Перевёрнутый массив:", arr)
+
+
+# # #№2
+# import random 
+# rows = int(input("Введите количество строк: "))      
+# colums = int(input("Введите количество столбцов: "))   
+# arr = [] 
+
+# for i in range(rows):         
+#     row = []         
+#     for j in range(colums):  
+#         num = random.randint(-20, 20) 
+#         row.append(num)        
+#     arr.append(row)          
+# print("Двумерный массив:")
+
+# for row in arr:               
+#     print(row)                 
+
+# min = arr[0][0]           
+# for i in range(rows):        
+#     for j in range(colums):
+#         if arr[i][j] < min:  
+#             min = arr[i][j]  
+# print("Минимальный элемент:", min)
+
+# if rows >= 2:                  
+#     print("Вторая строка:", arr[1]) 
+# else:
+#     print("В массиве меньше двух строк")
+
+# colum = []                
+# for i in range(rows):    
+#     colum.append(arr[i][0]) 
+# print("Первый столбец:", colum)
+
+
+
+
+
+
+
+
+
+# #     #№3
+# n = int(input("Введите количество элементов массива: "))
+# arr = []
+# print("Введите элементы массива:")
+
+# for i in range(n):
+#     a = int(input(f"Элемент {i+1}: "))
+#     arr.append(a)
+
+# zeros = False
+
+# for i in range(len(arr) - 1):
+#     if arr[i] == 0 and arr[i+1] == 0:
+#         zeros = True
+#         break
+# print("Массив:", arr)
+
+# if zeros:
+#     print("В массиве есть два подряд идущих нуля")
+# else:
+#     print("В массиве нет двух подряд идущих нулей")
+
+
+
+
+
+# #      #№4
+# import random
+
+# n = int(input("Введите количество элементов массива: "))
+# arr = []
+
+# for i in range(n):
+#     num = random.randint(1, 10)  
+#     arr.append(num) 
+# print("Массив:", arr)
+
+# count = 0
+# for num in arr:           
+#     if num % 3 == 0:    
+#         count += 1 
+
+# even = []
+# for num in arr:          
+#     if num % 2 == 0:     
+#         even.append(num)  
+
+# if len(even) > 0:  
+#     result = sum(even) / len(even)
+#     print("Среднее арифметическое чётных чисел:", result)
+# else:                   
+#    print("В массиве нет четных чисел")
+# print("Количество чисел, делящихся на 3:", count)
