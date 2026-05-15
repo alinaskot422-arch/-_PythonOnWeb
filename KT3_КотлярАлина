@@ -1,0 +1,20 @@
+# #№1
+# def print_hello(name):
+#     print("Привет, " + name + "!")
+# string = input("Введите ваше имя ")
+# print_hello(string)
+
+
+#  #№2
+# def gcd(a, b):
+#     while b != 0:
+#         с = a % b   
+#         a = b              
+#         b = с       
+#     return a
+
+# a = int(input("Введите первое число: "))
+# b = int(input("Введите второе число: "))
+
+# result = gcd(a, b)
+# print("НОД = ", result)
