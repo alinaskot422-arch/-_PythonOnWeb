@@ -1,0 +1,31 @@
+A = int(input("Введите A: "))
+B = int(input("Введите B: "))
+K = int(input("Введите K: "))
+numbers = []  
+min_num = 0 
+max_num = 0 
+count = 0         
+
+for num in range(A, B + 1):
+    a = 1
+    temp_num = num  
+    
+    while temp_num > 0:
+        b = temp_num % 10 
+        if b != 0:  
+            a *= b
+        temp_num //= 10 
+
+    if a == K:
+        numbers.append(num)
+        count += 1
+
+if numbers:
+    min_num= min(numbers)
+    max_num = max(numbers) 
+    print(f"Найденные числа: {numbers}")
+    print(f"Количество найденных чисел: {count}")
+    print(f"Минимальное число: {min_num}")
+    print(f"Максимальное число: {max_num}")
+else:
+    print("Нет чисел в диапазоне [{A}; {B}], у которых произведение ненулевых цифр равно {K}.")
